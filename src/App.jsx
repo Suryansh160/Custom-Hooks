@@ -8,6 +8,10 @@ import NotFoundPage from './pages/not-found'
 import Layout from './components/layout'
 import { Children } from 'react'
 import { useRoutes } from 'react-router-dom'
+import ReactHookFormExamplePage from './pages/react-hook-form-example'
+import Hooks from './pages/hooks'
+import UseMemoExample from './pages/hooks/use-memo-example'
+import UseCallbackExample from './pages/hooks/use-callback-example'
 
 function App () {
   function CustomRoutes () {
@@ -18,7 +22,11 @@ function App () {
         children: [
           { path: 'recipe-list', element: <ReceipeList /> },
           { path: 'comments-list', element: <CommentsList /> },
-          { path: 'recipe-list/:id', element: <RecipeDetailsPage /> }
+          { path: 'recipe-list/:id', element: <RecipeDetailsPage /> },
+          { path: 'react-hook-form', element: <ReactHookFormExamplePage /> },
+          { path: 'hooks', element: <Hooks /> },
+          { path: 'memo', element: <UseMemoExample /> },
+          { path: 'callback', element: <UseCallbackExample /> }
         ]
       },
       {
@@ -34,7 +42,7 @@ function App () {
 
   return (
     <div>
-      <h1>React routing, Custom hooks and more</h1>
+      {/* <h1>React routing, Custom hooks and more</h1>
 
       <div>
         <Link to={'/home/recipe-list'}>
@@ -60,7 +68,7 @@ function App () {
         style={{ backgroundColor: 'black', color: 'white' }}
       >
         Navigate to Comments List page
-      </button>
+      </button> */}
 
       {/* <Routes>
         <Route path='/home' element={<Layout />}>

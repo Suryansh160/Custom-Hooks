@@ -12,6 +12,7 @@ import ReactHookFormExamplePage from './pages/react-hook-form-example'
 import Hooks from './pages/hooks'
 import UseMemoExample from './pages/hooks/use-memo-example'
 import UseCallbackExample from './pages/hooks/use-callback-example'
+import ReactQueryDemo from './pages/hooks/react-query'
 
 function App () {
   function CustomRoutes () {
@@ -26,7 +27,8 @@ function App () {
           { path: 'react-hook-form', element: <ReactHookFormExamplePage /> },
           { path: 'hooks', element: <Hooks /> },
           { path: 'memo', element: <UseMemoExample /> },
-          { path: 'callback', element: <UseCallbackExample /> }
+          { path: 'callback', element: <UseCallbackExample /> },
+          { path: 'react-query-demo', element: <ReactQueryDemo /> }
         ]
       },
       {
